@@ -26,13 +26,13 @@ class _MyAppState extends State<MyApp> {
   Future<void> startYoti() async {
     try {
       var response = await _yotiFlutterPlugin.startYoti(
-          "4e44f64c-bd8f-4eec-88ef-0b378e1afa08",
-          "5f6c67b4-a507-4da3-81f9-d6960c8d3476",
+          "8b7d6454-b806-453b-a115-61360bbb9bab",
+          "5086471d-8070-45b2-a468-10bf65900720",
           );
 
-      print(response);
+      debugPrint(response.toString());
     } catch (error) {
-      print('Platform err: ${error.toString()}');
+      debugPrint('Platform err: ${error.toString()}');
     }
   }
 
